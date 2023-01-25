@@ -1,0 +1,10 @@
+01:32:31 **** Build of configuration Debug for project I2C_Scanner_Discovery ****
+make -j12 all 
+arm-none-eabi-size   I2C_Scanner_Discovery.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12820	    164	   1948	  14932	   3a54	I2C_Scanner_Discovery.elf
+Finished building: default.size.stdout
+ 
+
+01:32:31 Build Finished. 0 errors, 0 warnings. (took 292ms)
+

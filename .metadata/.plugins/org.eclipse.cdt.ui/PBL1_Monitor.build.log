@@ -1,0 +1,42 @@
+04:53:40 **** Incremental Build of configuration Debug for project PBL1_Monitor ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/ASUS/STM32CubeIDE/MAD_Lab_1.7.0/PBL1_Monitor/Drivers/ILI9341" -I"C:/Users/ASUS/STM32CubeIDE/MAD_Lab_1.7.0/PBL1_Monitor/Drivers/STM32-AM2320-master" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'saveAllData':
+../Core/Src/main.c:142:7: warning: unused variable 'str' [-Wunused-variable]
+  142 |  char str[100];
+      |       ^~~
+../Core/Src/main.c: In function 'readAllData':
+../Core/Src/main.c:197:7: warning: unused variable 'str' [-Wunused-variable]
+  197 |  char str[100];
+      |       ^~~
+../Core/Src/main.c: In function 'updatePreviousValue':
+../Core/Src/main.c:383:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  383 |  sprintf(Temp_Buffer_text, "%05d", numberOfRecordBuffer[showNum % 20]);
+      |                             ~~~^   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                |                       |
+      |                                int                     uint32_t {aka long unsigned int}
+      |                             %05ld
+../Core/Src/main.c: In function 'updateValue':
+../Core/Src/main.c:428:33: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long unsigned int' [-Wformat=]
+  428 |   sprintf(Temp_Buffer_text, "%05d", numberOfRecord+1);
+      |                              ~~~^   ~~~~~~~~~~~~~~~~
+      |                                 |                 |
+      |                                 int               long unsigned int
+      |                              %05ld
+arm-none-eabi-gcc -o "PBL1_Monitor.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\ASUS\STM32CubeIDE\MAD_Lab_1.7.0\PBL1_Monitor\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PBL1_Monitor.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: PBL1_Monitor.elf
+ 
+arm-none-eabi-size   PBL1_Monitor.elf 
+arm-none-eabi-objdump -h -S  PBL1_Monitor.elf  > "PBL1_Monitor.list"
+arm-none-eabi-objcopy  -O binary  PBL1_Monitor.elf  "PBL1_Monitor.bin"
+   text	   data	    bss	    dec	    hex	filename
+  49140	    504	   2808	  52452	   cce4	PBL1_Monitor.elf
+Finished building: default.size.stdout
+ 
+Finished building: PBL1_Monitor.bin
+ 
+Finished building: PBL1_Monitor.list
+ 
+
+04:53:41 Build Finished. 0 errors, 4 warnings. (took 1s.680ms)
+

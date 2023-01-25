@@ -1,0 +1,10 @@
+01:32:35 **** Build of configuration Debug for project Lab07 ****
+make -j12 all 
+arm-none-eabi-size   Lab07.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30928	     20	   3172	  34120	   8548	Lab07.elf
+Finished building: default.size.stdout
+ 
+
+01:32:35 Build Finished. 0 errors, 0 warnings. (took 412ms)
+

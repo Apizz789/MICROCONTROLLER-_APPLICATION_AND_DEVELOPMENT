@@ -1,0 +1,10 @@
+16:51:58 **** Incremental Build of configuration Debug for project SmartClock ****
+make -j12 all 
+arm-none-eabi-size   SmartClock.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 200084	    492	   1924	 202500	  31704	SmartClock.elf
+Finished building: default.size.stdout
+ 
+
+16:51:59 Build Finished. 0 errors, 0 warnings. (took 303ms)
+

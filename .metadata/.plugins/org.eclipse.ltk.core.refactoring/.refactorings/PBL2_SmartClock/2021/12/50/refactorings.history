@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PBL2_SmartClock/767_SPI_ILI9341_2.ioc&apos; to &apos;PBL2_SmartClock.ioc&apos;" description="Rename resource &apos;767_SPI_ILI9341_2.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="767_SPI_ILI9341_2.ioc" name="PBL2_SmartClock.ioc" stamp="1639039672586" updateReferences="true"/>
+</session>

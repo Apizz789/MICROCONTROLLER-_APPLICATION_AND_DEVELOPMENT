@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="HAL_UART_Transmit"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="HAL_UART_Transmit"/>
+			<item value="notify"/>
+			<item value="Normal"/>
+			<item value="normal air"/>
+			<item value="Transmit"/>
+			<item value="notifyPm"/>
+			<item value="compare"/>
+			<item value="temp"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+</section>

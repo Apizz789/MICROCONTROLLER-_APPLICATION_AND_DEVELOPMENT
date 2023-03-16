@@ -1,0 +1,6 @@
+main.c:73:6:displayNumber	48	static
+main.c:84:6:displayClock	64	static
+main.c:101:5:main	8	static
+main.c:170:6:SystemClock_Config	88	static
+main.c:221:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:238:6:Error_Handler	4	static,ignoring_inline_asm

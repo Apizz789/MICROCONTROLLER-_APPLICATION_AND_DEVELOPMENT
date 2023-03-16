@@ -1,0 +1,7 @@
+main.c:90:11:CRC16_2	24	static
+main.c:116:7:displayHEX	136	static
+main.c:188:8:TemperatureAndHumid	24	static
+main.c:131:5:main	432	static
+main.c:199:8:ADC_PWM_Temperature	24	static
+main.c:978:6:SystemClock_Config	88	static
+main.c:1027:6:Error_Handler	4	static,ignoring_inline_asm
